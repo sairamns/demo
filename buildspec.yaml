@@ -1,3 +1,4 @@
+---
 version: 0.2
 phases:
   install: 
@@ -5,6 +6,6 @@ phases:
       nodejs: 18
 build: 
   commands: 
-    - aws s3 sync ./build/ s3://kanisrcbckt
+    - aws s3 sync ./build/ s3://code-pipeline-bkkt
 artifacts:
   files: "*/"
